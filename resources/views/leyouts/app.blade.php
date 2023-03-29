@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Blog Home - Start Bootstrap Template</title>
+        <title>Perfect Beauty Center</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="{{ asset ('assets/favicon.ico') }}" />
         <!-- Core theme CSS (includes Bootstrap) ovde sam dodala "{{asset(' ')}}" i kod js i favicon-->

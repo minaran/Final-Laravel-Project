@@ -23,10 +23,9 @@ class HomeController extends Controller
 
 
 
-        return view('index', 
-            compact('categories', 'posts'));
-        //  [ 'categories' => $allCategories,  // ali NE, ima php trik za to
-        //    'posts' => $posts  ]);          // kad su isti kljuc i vrednost koriste compact umesto niza
+        return view('index', compact('categories', 'posts'));
+        //  [ 'categories' => $allCategories,  // ali NE, ima php trik za to kad imamo kljuc
+        //    'posts' => $posts  ]);          //  i varijablu sa istim imenom, koristi se metod compact
         
     }
 }

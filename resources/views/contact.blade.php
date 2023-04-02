@@ -1,5 +1,7 @@
 @extends('layouts.blog')
 
+@section('title', 'Contact')
+
 @section('content')  
 
         <!-- Page header with logo and tagline-->
@@ -21,3 +23,10 @@
             </div>
         </div>
 @endsection       
+
+<!-- Drugi sadrzaj koji mogu da unesem-->
+@section('content2')
+<div>
+<h3>Hvala Vam na kontaktu</h3>
+</div>
+@endsection

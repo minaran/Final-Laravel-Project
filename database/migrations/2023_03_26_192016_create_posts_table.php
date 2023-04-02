@@ -16,7 +16,8 @@ return new class extends Migration
             $table->string('title');
             $table->text('post_text');
             // mozda dodam sliku kasnije
-            $table->foreignId('category_id')->constrained();
+            $table->foreignId('category_id');
+            $table->foreignId('user_id');
             $table->timestamps();
         });
     }

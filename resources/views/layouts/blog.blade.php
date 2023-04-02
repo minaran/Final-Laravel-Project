@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Perfect Beauty Center</title>
+        <title>@yield('title')</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="{{ asset ('assets/favicon.ico') }}" />
         <!-- Core theme CSS (includes Bootstrap) ovde sam dodala "{{asset(' ')}}" i kod js i favicon-->
@@ -29,6 +29,8 @@
         </nav>
         @yield('content')
         
+        @yield('content2')  <!-- Deo gde mogu uneti jos neki sadrzaj pr.na strani Contact-->
+
         <!-- Footer-->
         <footer class="py-5 bg-dark">
             <div class="container"><p class="m-0 text-center text-white">UNDP & FON &copy; by Mina 2023</p></div>

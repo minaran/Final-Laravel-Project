@@ -1,4 +1,4 @@
-@extends('leyouts.app')
+@extends('layouts.blog')
 
 @section('content')    
 
@@ -16,7 +16,7 @@
         <div class="container">
             <div class="row">                                   
                 <!-- Blog entries-->
-                <div class="col-lg-6">
+                <div class="col-lg-12">
 
                     <!-- Featured blog post   // necu ga koristiti sad, pa nek samo stoji tako
                     <div class="card mb-4">
@@ -26,8 +26,8 @@
                             <h2 class="card-title">Featured Post Title</h2>
                             <p class="card-text">Moze bilo koji tekst da se ubaci ovde</p>
                             <a class="btn btn-primary" href="#!">Read more →</a>
-                        </div>-->
-                </div>    
+                        </div>
+                </div>    -->
 
                     <!-- Nested row for non-featured blog posts-->
                     <div class="row">
@@ -41,7 +41,7 @@
                                     <div class="small text-muted">{{ $post->created_at }}</div>
                                     <h2 class="card-title h4">{{ $post->title }}</h2>
                                     <p class="card-text">{{ $post->post_text }}</p>
-                                    <a class="btn btn-primary" href="#!">Read more →</a>
+                                    <a class="btn btn-primary" href="{{ route('posts.show', $post->id) }}">Read more →</a>
                                 </div>
                             </div>
                         </div>
@@ -50,7 +50,7 @@
                 </div>
                         
                     
-                    <!-- Pagination                 // mozda ce mi trebati, necu da brisem
+                    <!--   Pagination                 // mozda ce mi trebati, necu da brisem
                     <nav aria-label="Pagination">
                         <hr class="my-0" />
                         <ul class="pagination justify-content-center my-4">
@@ -63,10 +63,10 @@
                             <li class="page-item"><a class="page-link" href="#!">Older</a></li>
                         </ul>
                     </nav>
-                </div> -->
+                </div>      --> 
 
                 <!-- Side widgets-->
-                <div class="col-lg-10">
+                <div class="col-lg-12">
                     
                     <!-- Categories widget-->
                     <div class="card mb-4">

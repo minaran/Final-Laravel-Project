@@ -8,7 +8,7 @@
         <header class="py-5 bg-light border-bottom mb-4">
             <div class="container">
                 <div class="text-center my-5">
-                    <h2 class="fw-bolder">Welcome to my Laravel project!</h2>
+                    <h3 class="fw-bolder">Welcome to Laravel Beauty project!</h3>
                     <p class="lead mb-0">Perfect Hair Salon</p>
                 </div>
             </div>
@@ -35,10 +35,10 @@
                     <div class="row">
 
         @foreach($posts as $post)
-                        <div class="col-lg-6">
+                        <div class="col-lg-12">
                             <!-- Blog post-->
                             <div class="card mb-4">
-                                <a href="{{ route('posts.show', $post->id) }}"><img class="card-img-top" src="https://dummyimage.com/700x350/49d5eb/1926b3.jpg&text=Perfect+Beauty+Center" alt="..." /></a>
+                                <a href="{{ route('posts.show', $post->id) }}"><img class="card-img-top" src="https://dummyimage.com/700x120/49d5eb/1926b3.jpg&text=Perfect+Beauty+Center" alt="..." /></a>
                                 <div class="card-body">
                                     <div class="small text-muted">{{ $post->created_at }}</div>
                                     <h2 class="card-title h4">{{ $post->title }}</h2>

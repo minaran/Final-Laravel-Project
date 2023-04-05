@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\TasksController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostsController;
@@ -26,6 +27,17 @@ Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+
+    Route::get('/blog', [TasksController::class, 'index'])->name('blog'); //prikazuje sve taskove
+    Route::get('/blog/{id}', [TasksController::class, 'show']); //prikazuje jedan tasks iz baze
+    Route::get('/blog/create/post', [TasksController::class, 'create']); // prikazuje create formu
+    Route::post('/blog/create/post', [TaskssController::class, 'store']); // cuva kreirani task u bazu
+    Route::get('/blog/{id}/edit', [TasksController::class, 'edit']); // prikazuje edit formu
+    Route::put('/blog/{id}/edit', [TasksController::class, 'update']); // cuva azurirani task u bazu
+    Route::delete('/blog/{id}', [TasksController::class, 'destroy']); // brise task iz baze
+
+
+
 
 // Route::get('/', function () {return view('index');});  // ovo je bio prvi nacin preko funkcije
 // Route::view(uri:'/', view: 'index')->name(name:'home'); // promenicemo i ovu krace napisanu u sledecu

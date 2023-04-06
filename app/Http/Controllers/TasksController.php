@@ -88,7 +88,7 @@ class TasksController extends Controller
         } else {
             $task = Task::find($taskid);
 
-            return view('blog.show', [
+            return view('blog.show')->with( [
                 'task' => $task,
                 'user_login' => Auth::id()
             ]);

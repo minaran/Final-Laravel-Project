@@ -89,7 +89,8 @@
                     <!-- Side widget-->
                     <div class="card mb-4">
                         <div class="card-header">New offers for you !!! </div>
-                        <div class="card-body">I can put anything I want inside of these side widgets. It is easy to use, when you know how!</div>
+                        <div class="card-body">I can put anything I want inside of these side widgets. It is easy to use, when you know how!
+                        </div>
                     </div>
                 </div>
             </div>

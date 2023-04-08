@@ -28,6 +28,7 @@ Route::view(uri: '/contact', view:'contact')->name(name:'contact');
 
 // Route::get('posts/{postId}', [\App\Http\Controllers\PostController::class, 'show'])->name('posts.show');  // jer menjamo i u postControlleru, bolje je ovako:
 Route::get('posts/{post}', [\App\Http\Controllers\PostController::class, 'show'])->name(name:'posts.show');
+    
 
 
 // ovo se dobije instalacijom Brezza
@@ -47,6 +48,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/blog/{id}/edit', [TasksController::class, 'edit']); // prikazuje edit formu
     Route::put('/blog/{id}/edit', [TasksController::class, 'update']); // cuva azurirani task u bazu
     Route::delete('/blog/{id}', [TasksController::class, 'destroy']); // brise task iz baze
+
 
 
 });

@@ -4,6 +4,14 @@
 
 @section('content')  
 
+<img
+class="rounded mx-auto d-block" 
+alt="random photo"
+style="max-height: 240px;"
+src="{{ $randomPhoto }}"
+/>
+
+
         <!-- Page header with logo and tagline-->
         <header class="py-5 bg-light border-bottom mb-4">
             <div class="container">

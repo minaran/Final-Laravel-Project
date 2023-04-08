@@ -212,4 +212,7 @@ return [
         // 'ExampleClass' => App\Example\ExampleClass::class,
     ])->toArray(),
 
+
+    'unsplash_api_key' => env('UNSPLASH_API_KEY'),
+
 ];

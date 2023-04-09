@@ -7,7 +7,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
-class UsersController extends Controller
+class UsersControllers extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,7 +17,7 @@ class UsersController extends Controller
     public function index()
     {
         // $users = User::all()->where('user_id', user_id);
-        $users = DB::table('users')->get();
+        $users = DB::table('users')->get();         // povlacim podatke direktno iz baze
         return $users;
     }
 

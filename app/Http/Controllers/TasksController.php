@@ -25,9 +25,9 @@ class TasksController extends Controller
             'tasks' => $tasks
         ]);
     // $user = Auth::user();
-        // $user_posts = $user->posts;
+        // $user_tasks = $user->tasks;
         // return view('blog.index', [
-        //     'posts' => $user_posts
+        //     'tasks' => $user_tasks
         // ]);
     }
 
@@ -77,7 +77,7 @@ class TasksController extends Controller
      * @return \Illuminate\Http\Response
      * 
      *///get ruta jer prihvatamo podatke iz baze
-    public function show(Task $taskid)
+    public function show($taskid)
     {
         if ($taskid == "my") {
             $user = Auth::user();
@@ -88,7 +88,7 @@ class TasksController extends Controller
         } else {
             $task = Task::find($taskid);
 
-            return view('blog.show')->with( [
+            return view('blog.show', [
                 'task' => $task,
                 'user_login' => Auth::id()
             ]);
@@ -102,11 +102,11 @@ class TasksController extends Controller
      * @return \Illuminate\Http\Response
      * 
      *///get ruta - jer zelimo da prikazemo edit form view
-    public function edit(Task $taskid)
+    public function edit($taskid)
     {
         $task = Task::find($taskid);
 
-        if ($task->user->id == Auth::id()) {
+       if ($task->user->id == Auth::id()) {
             $categories = Category::all();
             return view('blog.edit', [
                 'task' => $task,
@@ -144,7 +144,7 @@ class TasksController extends Controller
      * @return \Illuminate\Http\Response
      * 
      *///delete ruta - jer zelimo da obrisemo iz baze jedan red
-    public function destroy(Task $taskid)
+    public function destroy($taskid)
     {
         $task = Task::find($taskid);
         if ($task->user->id == Auth::id()) {

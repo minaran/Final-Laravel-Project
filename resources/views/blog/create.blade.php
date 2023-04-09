@@ -7,8 +7,8 @@
             <div class="col-12 pt-2">
                 <a href="/blog" class="btn btn-outline-primary btn-sm">Nazad</a>
                 <div class=" mt-5 pl-4 pr-4 pt-4 pb-4">
-                    <h1 class="display-4">Kreiraj novi Post</h1>
-                    <p>Popuni ovu formu da kreiras novi post</p>
+                    <h1 class="display-4">Kreiraj novi Task</h1>
+                    <p>Popuni ovu formu da kreiras novi task</p>
 
                     <hr>
 
@@ -16,28 +16,28 @@
                         @csrf
                         <div class="row">
                             <div class="control-group col-12">
-                                <label for="title">Post Title</label>
+                                <label for="title">Task Naslov</label>
                                 <input type="text" id="title" class="form-control" name="title"
-                                       placeholder="Enter Post Title" required>
+                                       placeholder="Enter Task Title" required>
                             </div>
                             <div class="control-group col-12 mt-2">
-                                <label for="excerpt">Post Excerpt</label>
-                                <textarea id="excerpt" class="form-control" name="excerpt" placeholder="Enter Post Excerpt"
+                                <label for="excerpt">Task Excerpt</label>
+                                <textarea id="excerpt" class="form-control" name="excerpt" placeholder="Enter Task Excerpt"
                                           rows="" required></textarea>
                             </div>
                             <div class="control-group col-12 mt-2">
-                                <label for="body">Post Body</label>
-                                <textarea id="body" class="form-control" name="body" placeholder="Enter Post Body"
+                                <label for="body">Task Body</label>
+                                <textarea id="body" class="form-control" name="body" placeholder="Enter Task Body"
                                           rows="" required></textarea>
                             </div>
                             <div class="control-group col-12">
-                                <label for="slug">Post Slug</label>
+                                <label for="slug">Task Slug</label>
                                 <input type="text" id="slug" class="form-control" name="slug"
-                                       placeholder="Enter-Post-Slug" required>
+                                       placeholder="enter-task-slug" required>
                             </div>
 
                             <div class="control-group col-12">
-                                <label for="category">Post Category</label>
+                                <label for="category">Task Category</label>
                                 <select name="category" class="form-select">
                                 @foreach ($categories as $cat)
                                     <option value="{{ $cat->id }}">
@@ -47,7 +47,7 @@
                                 </select>
                             </div>
                             <div class="control-group col-12">
-                                <label for="user">Post User</label>
+                                <label for="user">Task User</label>
                                 <select name="user" class="form-select">
                                 @foreach ($users as $user)
                                     <option value="{{ $user->id }}">
@@ -62,7 +62,7 @@
                         <div class="row mt-2">
                             <div class="control-group col-12 text-center">
                                 <button id="btn-submit" class="btn btn-primary">
-                                    Create Post
+                                    Create Task
                                 </button>
                             </div>
                         </div>

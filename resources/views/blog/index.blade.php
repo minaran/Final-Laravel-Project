@@ -6,11 +6,11 @@
                 <div class="row">
                     <div class="col-8">
                     <h1 class="display-one">Naš Blog!</h1>
-                    <p>Uživaj čitajući naše postove. Klikni na naziv posta da pročitaš više!</p>
+                    <p>Upoznajte se sa novostima, modni trendovi se menjaju, kako na polju modne industrije, preko šminke, do frizura. Klikni na naziv taska da pročitaš više!</p>
                     </div>
                     <div class="col-4">
-                    <p>Kreiraj novi Post</p>
-                    <a href="/blog/create/task" class="btn btn-primary btn-sm">Dodaj Post</a>
+                    <p>Kreiraj novi Task, samo jednim klikom:</p>
+                    <a href="/blog/create/task" class="btn btn-primary btn-sm">Dodaj Task</a>
                     </div>
                 </div>
             @forelse($tasks as $task)
@@ -18,7 +18,7 @@
                     <li><a href="./blog/{{ $task->id }}">{{ ucfirst($task->title) }}</a></li>
                 </ul>
             @empty
-                <p class="text-warning">Nema dostupnih postova</p>
+                <p class="text-warning">Nema dostupnih taskova</p>
             @endforelse
             </div>
         </div>

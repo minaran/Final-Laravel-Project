@@ -12,14 +12,14 @@
 
                 <i> Category: {{$task->category->name}}</i> 
                 <hr>
-                <a href="/blog/{{ $task->id }}/edit" class="btn btn-outline-primary">Uredi Post</a>
+                <a href="/blog/{{ $task->id }}/edit" class="btn btn-outline-primary">Uredi Task</a>
                 <br><br>
                 <form id="delete-frm" class="" action="" method="POST">
                     <!-- @method('DELETE') kao blade direktiva kreira input polje koje će override-ovati default POST metodu na DELETE metodu
                     Ovo možete i da proverite kroz inspect element  -->
                     @method('DELETE') 
-                    @csrf
-                    <button class="btn btn-danger">Obrisi Post</button>
+                    @csrf               <!-- da se na bezbedan nacin razmenju informacije koje se salju kroz formu -->
+                    <button class="btn btn-danger">Obrisi Task</button>
                 </form>
             </div>
         </div>

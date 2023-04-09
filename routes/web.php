@@ -43,8 +43,8 @@ Route::middleware('auth')->group(function () {
 
     Route::get('/blog', [TasksController::class, 'index'])->name('blog'); //prikazuje sve taskove
     Route::get('/blog/{id}', [TasksController::class, 'show']); //prikazuje jedan tasks iz baze
-    Route::get('/blog/create/post', [TasksController::class, 'create']); // prikazuje create formu
-    Route::post('/blog/create/post', [TaskssController::class, 'store']); // cuva kreirani task u bazu
+    Route::get('/blog/create/task', [TasksController::class, 'create']); // prikazuje create formu
+    Route::post('/blog/create/task', [TasksController::class, 'store']); // cuva kreirani task u bazu
     Route::get('/blog/{id}/edit', [TasksController::class, 'edit']); // prikazuje edit formu
     Route::put('/blog/{id}/edit', [TasksController::class, 'update']); // cuva azurirani task u bazu
     Route::delete('/blog/{id}', [TasksController::class, 'destroy']); // brise task iz baze

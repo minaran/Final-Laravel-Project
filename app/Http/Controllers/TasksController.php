@@ -124,7 +124,7 @@ class TasksController extends Controller
      * @param  \App\Models\Task  $task
      * @return \Illuminate\Http\Response
      *///put ruta - jer saljemo put zahtev i update u bazu
-    public function update(Request $request, Task $taskid)
+    public function update(Request $request, $taskid)   // izbrisan Task ispred $taskid i sad radi pomogao mi Luka
     {
         $task = Task::find($taskid);
         $task->update([

@@ -23,8 +23,12 @@ use App\Http\Controllers\PostsController;
 
 Route::get('/', [\App\Http\Controllers\HomeController::class, 'index'])->name(name:'home');
 
+
+
+
 Route::view(uri:'/about', view:'about')->name(name:'about');
 Route::view(uri: '/contact', view:'contact')->name(name:'contact');
+
 
 // Route::get('posts/{postId}', [\App\Http\Controllers\PostController::class, 'show'])->name('posts.show');  // jer menjamo i u postControlleru, bolje je ovako:
 Route::get('posts/{post}', [\App\Http\Controllers\PostController::class, 'show'])->name(name:'posts.show');

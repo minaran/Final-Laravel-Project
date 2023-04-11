@@ -5,8 +5,8 @@
 @section('content')  
 
 <img
-class="rounded mx-auto d-block" 
-alt="random photo"
+class="d-block my=5" 
+alt="Unsplash random photo, ali stvarno ne znam zasto se ne prikazuje !!!"
 style="max-height: 240px;"
 src="{{ $randomPhoto }}"
 />

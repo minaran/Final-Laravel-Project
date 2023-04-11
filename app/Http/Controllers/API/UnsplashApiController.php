@@ -9,13 +9,13 @@ use Illuminate\Support\Facades\Http;
 
 class UnsplashApiController extends Controller
 {
+
     public function show()
     {
         $unsplash = new UnsplashApiServices();
         $randomPhoto = $unsplash->random();
-
-        return view('about')
-        ->with('randomPhoto', $randomPhoto["urls"],["regular"]);
+        return view(view: 'about')
+        ->with('randomPhoto', $randomPhoto["urls"]["regular"]);
     }
   
 

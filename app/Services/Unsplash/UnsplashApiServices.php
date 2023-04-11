@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Services\Unsplash;
+
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
 
@@ -16,10 +17,11 @@ class UnsplashApiServices
     
 
     // vratice nam neku random sliku iz javnog apija
-    public function random(): void
+    public function random(): array
     {
         $url = $this->baseUrl . "/photos/random"; 
 
+        
         return Http::get($url, [
             'client_id' => $this->apiToken
         ])->json();
@@ -27,7 +29,7 @@ class UnsplashApiServices
     }
 
     // pretraga svih fotografija putem publik api
-    /*public function search(string $query): array
+    public function search(string $query): array
     {
        // to je ustvari https://api.unsplash.com/search/photos
        $url = $this->baseUrl . "/search/photos";    
@@ -39,5 +41,5 @@ class UnsplashApiServices
         ])->json();
 
         return $response ['results'];
-    }*/
+    }
 }

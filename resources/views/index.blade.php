@@ -38,12 +38,12 @@
                         <div class="col-lg-12">
                             <!-- Blog post-->
                             <div class="card mb-4">
-                                <a href="{{ route('posts.show', $post->id) }}"><img class="card-img-top" src="https://dummyimage.com/700x120/49d5eb/1926b3.jpg&text=Perfect+Beauty+Center" alt="..." /></a>
+                                <a href="{{ route('posts.show', $post->id) }}"><img class="card-img-top" src="https://dummyimage.com/700x80/ad71ad/10133e.jpg&text=Perfect+Beauty+Center" alt="Trenutno je nedostupna slika" /></a>
                                 <div class="card-body">
                                     <div class="small text-muted">{{ $post->created_at }}</div>
                                     <h2 class="card-title h4">{{ $post->title }}</h2>
                                     <p class="card-text">{{ $post->post_text }}</p>
-                                    <a class="btn btn-primary" href="{{ route('posts.show', $post->id) }}">Read more →</a>
+                                    <a class="btn btn-primary" href="{{ route('posts.show', $post->id) }}">Pogledajte →</a>
                                 </div>
                             </div>
                         </div>
@@ -72,7 +72,7 @@
                     
                     <!-- Categories widget-->
                     <div class="card mb-4">
-                        <div class="card-header">Categories</div>
+                        <div class="card-header">KATEGORIJE</div>
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-sm-6">
@@ -88,8 +88,16 @@
                     
                     <!-- Side widget-->
                     <div class="card mb-4">
-                        <div class="card-header">New offers for you !!! </div>
-                        <div class="card-body">I can put anything I want inside of these side widgets. It is easy to use, when you know how!
+                        <div class="card-header">Naše su cene vrlo povoljne !!! </div>
+                        <div class="card-body">
+                    <ul>
+                    <li>OSNOVNE USLUGE	S	M	L	XL	XXL	XXXL</li>
+                    <li>FENIRANJE	500	 600 700  800  900	1200</li>
+                    <li>PRANJE I ŠIŠANJE	850	950	1100 1200 1300 1500</li>
+                    <li>ŠIŠANJE UZ KOLORACIJE	750	750	750	750	750	750</li>
+                    <li>PRANJE, ŠIŠANJE, FENIRANJE	1200 1300 1400 1600	1900 2100</li>
+                    <li>PROFESIONALNO ŠMINKANJE	1200 2000 3000</li>
+                    </ul>                        
                         </div>
                     </div>
                 </div>

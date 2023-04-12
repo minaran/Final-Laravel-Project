@@ -14,8 +14,8 @@ class UnsplashApiController extends Controller
     {
         $unsplash = new UnsplashApiServices();
         $randomPhoto = $unsplash->random();
-        return view(view: 'about')
-        ->with('randomPhoto', $randomPhoto["urls"]["regular"]);
+        return view(view: 'gallery')
+        ->with('randomPhoto', $randomPhoto ["urls"]["regular"]);
     }
   
 

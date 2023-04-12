@@ -27,6 +27,7 @@ Route::get('/', [\App\Http\Controllers\HomeController::class, 'index'])->name(na
 
 
 Route::view(uri:'/about', view:'about')->name(name:'about');
+Route::view(uri: '/gallery', view:'gallery')->name(name:'gallery');
 Route::view(uri: '/contact', view:'contact')->name(name:'contact');
 
 

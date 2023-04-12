@@ -15,7 +15,7 @@ class TaskSeeder extends Seeder
      */
     public function run(): void
     {
-        $user = User::find(5);
+        $user = User::find(2);
 
         $cat = Category::find(1);
 

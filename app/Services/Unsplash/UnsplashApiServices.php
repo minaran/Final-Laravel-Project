@@ -23,7 +23,7 @@ class UnsplashApiServices
 
         
         return Http::get($url, [
-            'client_id' => $this->apiToken
+            'client_id' => $this->apiToken,
         ])->json();
 
     }

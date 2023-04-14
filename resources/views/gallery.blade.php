@@ -20,11 +20,11 @@
 
                 <!-- Blog entries-->
                 <div class="col-lg-12">
-                <p class="lead mb-0">Pogledajte galeriju slika</p>
+                <p class="lead mb-0">Pogledajte "Unsplash" /random/ galeriju slika</p>
                 <img
-                    class="d-block my=5" 
+                    class="rounded mx-auto d-block" 
                     alt="Unsplash random photo"
-                    style="max-height: 240px;"
+                    style="max-height: 450px;"
                     src="{{ $randomPhoto }}" 
                     />
                     <hr>

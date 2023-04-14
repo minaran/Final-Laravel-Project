@@ -16,19 +16,18 @@ class UnsplashApiServices
     }
     
 
-    // vratice nam neku random sliku iz javnog apija
+    // vratice nam neku random sliku iz javnog api-ja, koju prikazujem u gallery.blade.php
     public function random(): array
     {
         $url = $this->baseUrl . "/photos/random"; 
 
-        
         return Http::get($url, [
             'client_id' => $this->apiToken,
         ])->json();
 
     }
 
-    // pretraga svih fotografija putem publik api
+    // pretraga svih fotografija putem publik api-ja:
     public function search(string $query): array
     {
        // to je ustvari https://api.unsplash.com/search/photos

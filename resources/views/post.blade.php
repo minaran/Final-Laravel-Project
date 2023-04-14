@@ -1,5 +1,7 @@
 @extends('layouts.blog')
 
+@section('title', 'Blog')
+
 @section('content')  
 
         <!-- Page header with logo and tagline-->

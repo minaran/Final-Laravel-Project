@@ -14,7 +14,7 @@ class UnsplashApiController extends Controller
     {
         $unsplash = new UnsplashApiServices();
         $randomPhoto = $unsplash->random();
-        return view(view: 'gallery')
+        return view('gallery')
         ->with('randomPhoto', $randomPhoto ["urls"]["regular"]);
     }
   
@@ -22,10 +22,11 @@ class UnsplashApiController extends Controller
     
     
     
+
     
     
     
-    //primer za javni api bez kljuca
+            //primer za javni api bez kljuca
             //public function getMakeup($response)
             //{
             //$response = Http::get('http://makeup-api.herokuapp.com/api/v1/products.json');

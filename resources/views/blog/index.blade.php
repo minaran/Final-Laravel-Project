@@ -6,7 +6,8 @@
                 <div class="row">
                     <div class="col-8">
                     <h1 class="display-one">Naš Blog!</h1>
-                    <p>Upoznajte se sa novostima, modni trendovi se menjaju, kako na polju modne industrije, preko šminke, do frizura. Klikni na naziv taska da pročitaš više!</p>
+                    <p>Upoznajte se sa novostima, modni trendovi se menjaju, kako na polju modne industrije, preko šminke, do frizura. Klikni na naziv taska da pročitaš više! 
+                       <br>Nakon registracije, možeš da kreiraš i objaviš svoj tekst na Našem Blog-u !</br></p>
                     </div>
                     <div class="col-4">
                     <p>Kreiraj novi Task, samo jednim klikom:</p>

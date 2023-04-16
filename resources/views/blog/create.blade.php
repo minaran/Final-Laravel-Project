@@ -46,7 +46,9 @@
                                 @endforeach
                                 </select>
                             </div>
-                            <div class="control-group col-12">
+                            
+                    <!--        necu koristiti ovaj deo forme za popunu, jer samo logovani korisnik moze da kreira i ayurira i brise 
+                                <div class="control-group col-12">
                                 <label for="user">Task User</label>
                                 <select name="user" class="form-select">
                                 @foreach ($users as $user)
@@ -56,7 +58,7 @@
                                 @endforeach
                                 </select>
                             </div>
-
+                        -->
                             
                         </div>
                         <div class="row mt-2">

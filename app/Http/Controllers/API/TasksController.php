@@ -95,8 +95,7 @@ class TasksController extends Controller
     {
         //
     }
-
-    /**
+/**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
@@ -124,10 +123,10 @@ class TasksController extends Controller
         $task->excerpt = $request->excerpt;
         $task->body = $request->body;
         $task->category_id = $request->category_id;
-
+        
         $task->save();
 
-        return response()->json(['Task is updated successfully.', new TaskResource($task)]);
+        return response()->json(['Post is updated successfully.', new TaskResource($task)]);
 
     }
 
@@ -139,6 +138,7 @@ class TasksController extends Controller
      */
     public function destroy(Task $task)  // stavljeno je u Api rutama u middleware sa koriscenjem tokena da samo logovani korisnik moze da obrise
     {
+        
         $task->delete();
         return response()->json('Task je uspesno obrisan.');
     }

@@ -23,6 +23,7 @@ Route::get('/', [\App\Http\Controllers\HomeController::class, 'index'])->name(na
 
 Route::view(uri:'/about', view:'about')->name(name:'about');
 Route::view(uri: '/contact', view:'contact')->name(name:'contact');
+Route::view(uri:'/register', view:'auth.register')->name(name:'register');
 
 // Route::view(uri: '/gallery', view:'gallery')->name(name:'gallery');  // korigovana i promenjena:
 Route::get('/gallery', [UnsplashApiController::class, 'show'])->name(name:'gallery');

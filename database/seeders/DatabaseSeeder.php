@@ -17,8 +17,8 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        
         User::factory(3)->create();
+        $this->call(AdminSeeder::class);   // dodajemo ovo da napravimo jednog fake admina
 
         
         // User::factory()->create([

@@ -137,7 +137,7 @@ class TasksController extends Controller
      * @param  \App\Models\Task  $task
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Task $task)
+    public function destroy(Task $task)  // stavljeno je u Api rutama u middleware sa koriscenjem tokena da samo logovani korisnik moze da obrise
     {
         $task->delete();
         return response()->json('Task je uspesno obrisan.');

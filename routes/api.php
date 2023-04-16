@@ -2,7 +2,7 @@
 
 use App\Http\Controllers\API\AuthController;
 use App\Http\Controllers\API\TasksController;
-use App\Http\Controllers\UsersControllers;
+use App\Http\Controllers\API\UsersControllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -30,11 +30,6 @@ Route::resource('/users', UsersControllers::class)->only(['index', 'show']); //z
 // Route::get('/tasks/{id}', [TasksController::class, 'show']);
 // zamenjene su sa resource (grupa od 7 razlicitih putanja) ali sa only definisem samo za odredjene
 Route::resource('/tasks', TasksController::class)->only(['index', 'show']);
-
-
-
-// Route::get('/users/{id}/tasks', [UserTasksController::class, 'index']);  // ovo je ostalo a dato je za primer, ali nisam uradila
-
 
 
 //Registracija korisnika

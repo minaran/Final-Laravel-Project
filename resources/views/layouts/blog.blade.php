@@ -34,7 +34,7 @@
         @yield('content2')  <!-- Deo gde mogu uneti jos neki sadrzaj pr.na strani Contact-->
 
         <!-- Footer-->
-        <footer class="py-5 bg-dark">
+        <footer class="py-3 bg-dark">
             <div class="container"><p class="m-0 text-center text-white">UNDP & FON &copy; by Mina 2023</p></div>
         </footer>
         <!-- Bootstrap core JS-->

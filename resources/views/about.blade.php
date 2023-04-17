@@ -4,9 +4,10 @@
 
 @section('content')  
         <!-- Page header with logo and tagline-->
-        <header class="py-5 bg-light border-bottom mb-4">
+        <header class="py-5 bg-light border-bottom mb-2">
+        <img class="card-img-top" src="{{url('/images/myimage1.png')}}" alt="Perfect Beauty Center"/>  
             <div class="container">
-                <div class="text-center my-5">
+                <div class="text-center my-2">
                     <h1 class="fw-bolder">About us</h1>
                     
                 </div>
@@ -22,9 +23,9 @@
 <hr>
 Na temeljima višegodišnjeg iskustva i velike ljubavi prema
 nezi i oblikovanju kose ostvarili smo prvi poslovni cilj i osnovali 
-Perfect Hair salon & academy by Tanja. 
+Perfect Hair & MackUp Salon. 
 
-Već 12 godina koračamo sigurnim koracima vodeći se ambicijom, 
+Već mnogo godina koračamo sigurnim koracima vodeći se ambicijom, 
 novim idejama i stalnim usavršavanjem. Učesnici smo brojnih 
 sajmova, seminara, manifestacija i skupova posvećenih nezi kose, 
 gde skupljamo nova znanja i veštine, kako bi svojim klijentima

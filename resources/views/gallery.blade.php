@@ -5,9 +5,9 @@
 @section('content')  
 
         <!-- Page header with logo and tagline-->
-        <header class="py-3 bg-light border-bottom mb-4">
+        <header class="py-3 bg-light border-bottom mb-2">
             <div class="container">
-                <div class="text-center my-5">
+                <div class="text-center my-2">
                     <h1 class="fw-bolder">Gallery</h1>
                     
                 </div>

@@ -5,11 +5,12 @@
 @section('content')    
 
     <!-- Page header with logo and tagline-->
-        <header class="py-5 bg-light border-bottom mb-4">
-            <div class="container">
+        <header class="py-0 bg-light border-bottom mb-4">
+        <img class="card-img-top" src="{{url('/images/myimage.png')}}" alt="Perfect Beauty Center"/>
+        <div class="container">
                 <div class="text-center my-5">
-                    <h3 class="fw-bolder">Welcome to Laravel Beauty project!</h3>
-                    <p class="lead mb-0">Perfect Hair Salon</p>
+                    <h3 class="fw-bolder">Welcome to Laravel Beauty Project!</h3>
+                    <p class="lead mb-0">Perfect Hair and MakeUp Salon</p>
                 </div>
             </div>
         </header>

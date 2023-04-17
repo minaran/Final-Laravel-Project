@@ -24,7 +24,7 @@
                         <li class="nav-item"><a class="nav-link" href="{{ route('gallery') }}">Galerija</a></li>
                         <li class="nav-item"><a class="nav-link" href="{{ route('contact') }}">Kontakt</a></li>
                         <li class="nav-item"><a class="nav-link" href="{{ route('register') }}">Registracija</a></li>
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="{{ route('blog') }}">Blog/Saznajte...</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="{{ route('blog') }}">Blog...</a></li>
                     </ul>
                 </div>
             </div>
